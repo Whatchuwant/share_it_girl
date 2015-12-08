@@ -1,0 +1,24 @@
+
+<link rel="stylesheet" href="main.css">
+<div class="bit-1">
+<nav>
+  <ul>
+    <li><a href="/logout">Logout</a></li>
+    <li><a href="/posts">Posts</a></li>
+    <li><a href="settings">Settings</a></li>
+    <li><a href="/profile">Profile</a></li>
+  </ul>
+</nav>
+</div>
+<h1>Share the love here</h1>
+
+
+
+<ul>
+ <% @posts.each do |post| %>
+    <h2><strong>User:</strong> <%= post.user %></h2>
+    <li><strong>Body:</strong> <%= post.body %></li>
+  <% end %>
+</ul>
+
+

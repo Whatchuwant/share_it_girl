@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  background:
+    linear-gradient(
+    rgba(246,247,249,0.8),
+    rgba(246,247,249,0.8)),
+    url(http://www.bestlookspa.com/wp-content/uploads/2014/08/permannentmakeup.png) no-repeat center center fixed;
+  background-size: cover;
+ }
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.frame {
+  margin: 0 auto;
+  max-width: 100%; }
+  .frame:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class*='bit-'] {
+  float: left;
+  padding: 0.3em; }
+
+.header_box {
+  height:180px;
+  font-family: "Zapfino";
+  font-weight: 800;
+  font-size: 70px;
+  text-align: center;
+}
+
+.bit-1 {
+  width: 100%;}
+
+.bit-2 {
+  width: 50%; }
+
+
+@media (max-width: 30em) {
+  .bit-1 {
+    width: 100%; }
+  .bit-2 {
+    width: 100%; }
+   }
+
+.box {
+  background: #F31368;
+  font-family: 'Raleway';
+  font-size: 24px;
+  text-align: center;
+  padding: 5px 0; 
+  opacity: 6;}
+
+a {
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+
+  display: block;
+  margin: 10px auto;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+}
+/*##########LOG IN BUTTON- HOME PAGE####################*/
+a.button {
+  color: #F31368;
+  /*box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;*/
+}
+a.button:hover {
+  color: white;
+  box-shadow: black 0 0px 0px 40px inset;
+}
+
+/*############SIGN UP BUTTON- HOME PAGE################*/
+a.button2 {
+  color: #F31368;
+  /*box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;*/
+}
+a.button2:hover {
+  color: white;
+  box-shadow: black 0 80px 0px 2px inset;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Futura;
+  outline: none;
+}
+
+body {
+  font-family: Futura;
+ /* background: #CDE8D5;*/
+}
+
+.main-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-form {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.main-form__title {
+  /*padding: 10px 0;*/
+  text-align: center;
+}
+.main-form__title h1 {
+  /*position: relative;*/
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+.main-form__title h1:after {
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 40px;
+  height: 4px;
+  background: #f2f2f2;
+  content: "";
+}
+.main-form__body--input {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #fcfcfc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  outline: 0;
+  font-size: 1.0rem;
+  color: #666666;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.main-form__body--input:focus {
+  background: #f7f7f7;
+}
+.main-form__body .btn {
+  display: block;
+  width: 48%;
+  margin-top: 10px;
+  float: left;
+  background: #e6e6e6;
+  padding: 15px;
+  border: 0;
+  font-size: .8rem;
+  color: #999999;
+  cursor: pointer;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.main-form__body .btn:last-of-type {
+  float: right;
+  background: #F31368;
+  color: #fff;
+}
+.main-form__body .btn:last-of-type:hover {
+  background: #F31368;
+}
+
+::-webkit-input-placeholder {
+  color: #cccccc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+:-moz-placeholder {
+  color: #cccccc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  color: #cccccc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  color: #cccccc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+ h1 { 
+  text-align: center;
+  font-family: 'Zapfino';
+  font-size: 34px;
+}
+
