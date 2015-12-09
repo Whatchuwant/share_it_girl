@@ -1,15 +1,18 @@
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  background:
+
+}*/
+/*  
+ 
     linear-gradient(
     rgba(246,247,249,0.8),
     rgba(246,247,249,0.8)),
-    url(http://www.bestlookspa.com/wp-content/uploads/2014/08/permannentmakeup.png) no-repeat center center fixed;
-  background-size: cover;
- }
+    no-repeat center center fixed;
+    background-size: cover;
+    
+ }*/
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
@@ -71,22 +74,22 @@ a {
 }
 /*##########LOG IN BUTTON- HOME PAGE####################*/
 a.button {
-  color: #F31368;
-  /*box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;*/
+  color: black;
+  box-shadow: black 0 0px 0px 2px inset;
 }
 a.button:hover {
   color: white;
-  box-shadow: black 0 0px 0px 40px inset;
+  box-shadow: black 0 80px 0px 40px inset;
 }
 
 /*############SIGN UP BUTTON- HOME PAGE################*/
 a.button2 {
-  color: #F31368;
-  /*box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;*/
+  color: black;
+  box-shadow: black 0 0px 0px 2px inset;
 }
 a.button2:hover {
   color: white;
-  box-shadow: black 0 80px 0px 2px inset;
+  box-shadow: black 0 80px 0px 40px inset;
 }
 
 @mixin placeholder {
@@ -230,4 +233,5 @@ body {
   font-family: 'Zapfino';
   font-size: 34px;
 }
+
 
