@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
 	has_one :profile
+	
+	  # users.password_hash in the database is a :string
+
 end
 
 class Post < ActiveRecord::Base

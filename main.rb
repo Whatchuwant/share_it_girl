@@ -3,6 +3,7 @@ require 'sinatra/activerecord'
 require 'bundler/setup'
 require 'rack-flash'
 require './models'
+# require 'bcrypt'
 enable :sessions
 
 
@@ -42,7 +43,7 @@ post '/login' do
 	if @user && @user.password == params[:password]
 		session[:user_id] = @user.id
 		flash[:info] = "You're now signed in"
-		redirect "/"
+		redirect "/posts"
 
 	else
 		flash[:alert] = "Your password or email is incorrect"
